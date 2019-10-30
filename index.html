@@ -1,10 +1,13 @@
 <html>
 <head>
     <title>CKB Blockly</title>
-    <script src="../blockly/blockly_compressed.js"></script>
+    <script src="../blockly/blockly_uncompressed.js"></script>
     <script src="../blockly/blocks_compressed.js"></script>
     <script src="../blockly/javascript_compressed.js"></script>
     <script src="../blockly/msg/js/en.js"></script>
+
+    <script src="./blocks/types.js"></script>
+    <script src="./generators/javascript/types.js"></script>
     <style>
     html, body {
       height: 100%;
@@ -165,6 +168,9 @@
         <block type="text"></block>
         <block type="text_length"></block>
         <block type="text_print"></block>
+    </category>
+    <category name="CKB_TYPES" colour="%{BKY_TEXTS_HUE}">
+        <block type="outpoint"></block>
     </category>
 </xml>
 
